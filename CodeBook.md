@@ -59,7 +59,7 @@ The scripts does the following:
 
 6.	Export/ Write complete data into TidyData.csv file
 
-
+7.	Construct independent tidy data set with the average of each variable for each activity and subject then export write into AverageVariables.csv file.
 
 Notes: 
 ======
