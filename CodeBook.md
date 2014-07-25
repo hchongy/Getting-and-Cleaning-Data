@@ -57,9 +57,9 @@ The scripts does the following:
 4.	Assign the meaningful activity labels.
 5.	Combine neccessary column from measurements data sets, subject and activity label.
 
-6.	Export/ Write complete data into TidyData.csv file
+6.	Export/ Write complete data into TidyData.txt file
 
-7.	Construct independent tidy data set with the average of each variable for each activity and subject then export write into AverageVariables.csv file.
+7.	Construct independent tidy data set with the average of each variable for each activity and subject then export write into AverageVariables.txt file.
 
 Notes: 
 ======

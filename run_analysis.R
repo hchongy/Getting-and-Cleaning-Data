@@ -48,7 +48,7 @@ final_data <- cbind("Subject" = xy_data$subject,
 ##final_data <- final_data[order(as.numeric(as.character(final_data$ActivityLabels)),as.numeric(as.character(final_data$Subject))),]
 
 # Export/ Write complete data into TidyData.csv file
-write.csv(final_data, file = "TidyData.csv")
+write.table(final_data, file = "TidyData.txt")
 
 # Creates a second, independent tidy data set with the average of each variable for each activity and subject.
 final_data_mean <- aggregate(final_data[,3] ~ final_data$Subject + final_data$ActivityLabels, data = final_data, FUN = mean)
@@ -58,5 +58,5 @@ for (i in 4:ncol(final_data)){
 }
 colnames(final_data_mean) <-  c("Subject", "ActivityLabels", features$V2[extract_columns])
 
-write.csv(final_data_mean, file="AverageVariables.csv")
+write.table(final_data_mean, file="AverageVariables.txt")
 
